@@ -6,3 +6,6 @@ Feature: feature to Test login functionality
     When user enters username and passsword
     And clicks on login button
     Then user is navigated to the home page
+    
+    
+ Scenario: to test the login functionality
