@@ -20,5 +20,6 @@ public class GoogleSearchPage_PF {
 	public void enterText(String text) {
 		
 		txt.sendKeys(text);
+		System.out.println("test git hub");
 	}
 }
