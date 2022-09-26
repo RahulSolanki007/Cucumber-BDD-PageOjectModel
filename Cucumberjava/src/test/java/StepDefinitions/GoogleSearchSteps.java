@@ -8,6 +8,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import io.cucumber.java.en.*;
+import io.github.bonigarcia.wdm.WebDriverManager;
 import pagefactory.GoogleSearchPage_PF;
 
 
@@ -19,7 +20,8 @@ public class GoogleSearchSteps {
 	@Given("browser is open")
 	public void browser_is_open() {
 	    System.out.println("Inside step - browser is open");
-	    System.setProperty("webdriver.chrome.driver", "C:\\Users\\Admin\\Jar's\\browser drivers\\chromedriver.exe");
+	 //   System.setProperty("webdriver.chrome.driver", "C:\\Users\\Admin\\Jar's\\browser drivers\\chromedriver.exe");
+	    WebDriverManager.chromedriver().setup();
 	    driver = new ChromeDriver();
 	   
 	}
@@ -33,8 +35,8 @@ public class GoogleSearchSteps {
 	@When("^user enters a (.*) in search box$")
 	public void user_enters_a_text_in_search_box(String text)  {
 	   System.out.println("Inside step pagefactory - user enters a text in search box");
-	   searchPF = new GoogleSearchPage_PF(driver);
-	   searchPF.enterText(text);
+//	   searchPF = new GoogleSearchPage_PF(driver);
+//	   searchPF.enterText(text);
 	
 	}
 
