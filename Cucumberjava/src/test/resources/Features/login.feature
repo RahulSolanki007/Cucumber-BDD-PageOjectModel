@@ -8,4 +8,3 @@ Feature: feature to Test login functionality
     Then user is navigated to the home page
     
     
- Scenario: to test the login functionality
